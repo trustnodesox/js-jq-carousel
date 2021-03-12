@@ -42,3 +42,13 @@ function next(){
   currentImg.removeClass("active");
   nextImg.addClass("active");
 }
+
+$(document).keyup(function(e){
+  if (e.keyCode == "39") {
+    next();
+  }
+
+  if (e.keyCode == "37") {
+    previous();
+  }
+})
